@@ -1,0 +1,71 @@
+body {
+    background-image: url('/fondo.png');
+    background-repeat: repeat;
+    padding-top: 5%;
+}
+
+.ImgLogo {
+    height: 4%;
+    width: 4%;
+    border-radius: 20%;
+    margin-right: 15px;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    
+}
+.cards {
+    width: 25%;
+    background-color: #495574;
+    color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 5% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card-body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10%;
+    width: 100%;
+}
+
+.card-title {
+    margin: 0 auto 1rem;
+}
+
+
+#botonplay, #botonexpresiones {
+    margin-bottom: 5%;
+    width:50%;
+    color: antiquewhite;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #495574; 
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indsn {
+    height: auto;
+    width: auto;
+    border-color: black;
+    border-radius: 10%;
+
+}

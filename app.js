@@ -1,18 +1,21 @@
 const express = require('express');
-const app = express();
 const path = require('path');
-const glossaryRouter = require('./routes/glossary');
+const morgan = require('morgan');
+const ejs = require("ejs");
+const myRouter = require('./routes/myRouter');
 
+const app = express();
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '/views'));
+
+
+// Middlewares
+app.use(morgan('dev'));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'scripts')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/api/glossary', glossaryRouter);
+// Agrego un enrutador compatible
+app.use('/', myRouter);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+module.exports = app;

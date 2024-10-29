@@ -2,16 +2,16 @@ body {
     background-image: url('/fondo.png');
     background-repeat: repeat;
     padding-top: 5%;
-    font-family: 'Arial', sans-serif; /* Cambia la fuente según prefieras */
+    font-family: 'Arial', sans-serif;
 }
 h1 {
     text-align: center;
     font-size: 2.5rem;
-    color: #333; /* Cambia el color según prefieras */
+    color: #333;
 }
 
 #glossary {
-    margin-left: 20%; /* Aleja las letras del borde izquierdo */
+    margin-left: 20%;
     margin-top: 3%;
 }
 
@@ -21,15 +21,15 @@ h1 {
 
 h3 {
     font-size: 1.5rem;
-    color: #555; /* Cambia el color según prefieras */
+    color: #555; 
 }
 
 p {
     font-size: 1.2rem;
-    color: #000; /* Cambia el color según prefieras */
+    color: #000; 
 }
 .creador{
-    margin-left: 20%; /* Aleja las letras del borde izquierdo */
+    margin-left: 20%; 
     margin-top: 3%;
 }
 

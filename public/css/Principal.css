@@ -8,6 +8,7 @@ body {
     height: 4%;
     width: 4%;
     border-radius: 20%;
+    margin-right: 15px;
 }
 
 .contenedor{
@@ -19,7 +20,7 @@ body {
 }
 .cards {
     width: 25%;
-    background-color: #525252;
+    background-color: #495574;
     color: antiquewhite;
     border: 2px solid black;
     border-radius: 5%;
@@ -54,7 +55,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333; 
+    background-color: #495574; 
     color: aliceblue;
     display: flex;
     align-items: center;

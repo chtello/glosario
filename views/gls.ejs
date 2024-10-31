@@ -1,3 +1,4 @@
+<!-- views/glosario.ejs -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,12 +10,10 @@
 </head>
 <body>
     <%- include("fragmentos/NavbarPrin"); %>
-
-    <h1>Bienvenido a Nuestro Glosario</h1>
     
     <form id="add-word-form">
-        <label for="wordEn" class="creador">Palabra en Inglés:</label>
-        <input type="text" id="wordEn" name="wordEn" required>
+        <label for="wordInput" class="creador">Palabra:</label>
+        <input type="text" id="wordInput" name="wordInput" required>
         <button type="submit">Agregar Palabra</button>
     </form>
 
@@ -22,7 +21,8 @@
         <table class="table" id="glossary-table">
             <thead>
                 <tr>
-                    <th>Palabra</th>
+                    <th>Palabra en Inglés</th>
+                    <th>Palabra en Español</th>
                     <th>Descripción</th>
                 </tr>
             </thead>
@@ -32,7 +32,8 @@
     </div>
     <%- include("fragmentos/footer"); %>
 
-    <script src="/appIngles.js"></script>
+    <!-- Incluir el archivo JavaScript ubicado en /scripts/app.js -->
+    <script src="/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -12,15 +12,15 @@ h1 {
 }
 
 #glossary {
-    display: flex; /* Añadir flexbox para centrar el contenido */
-    justify-content: center; /* Centrar horizontalmente */
+    display: flex;
+    justify-content: center; 
     margin-top: 3%;
     margin-left: 10;
 }
 
 #glossary-container {
-    margin: 30px auto; /* Espacio en la parte superior e inferior, y centrar horizontalmente */
-    width: 80%; /* Ancho del contenedor de la tabla */
+    margin: 30px auto; 
+    width: 80%; 
 }
 
 h3 {
@@ -34,27 +34,30 @@ p {
 }
 
 .creador {
-    text-align: center; /* Centrar el formulario */
+    text-align: center; 
     margin-top: 3%;
 }
 
-/* Estilos de la tabla */
 table {
-    margin: 0 auto; /* Centrar la tabla */
-    margin-bottom: 30px; /* Espacio al final de la tabla */
-    background-color: white; /* Color de fondo blanco para la tabla */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
-    width: 100%; /* Ancho de la tabla */
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    height: 100%;
 }
 
 th { 
-    text-align: left; /* Alinear texto de encabezados a la izquierda */
-    padding: 10px; /* Añadir padding para un mejor aspecto */
-    background-color: #f2f2f2; /* Color de fondo para encabezados */
+    text-align: left; 
+    padding: 10px; 
+    background-color: #f2f2f2; 
 }
 
 td {
-    padding: 10px; /* Añadir padding para celdas */
-    border-bottom: 1px solid #ddd; /* Línea divisoria para las filas */
+    padding: 10px; 
+    border-bottom: 1px solid #ddd; 
+}
+#add-word-form{
+    margin-left: 10%;
 }

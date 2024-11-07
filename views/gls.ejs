@@ -11,11 +11,7 @@
 <body>
     <%- include("fragmentos/NavbarPrin"); %>
     
-    <form id="add-word-form">
-        <label for="wordInput" class="creador">Palabra:</label>
-        <input type="text" id="wordInput" name="wordInput" required>
-        <button type="submit">Agregar Palabra</button>
-    </form>
+  
 
     <div id="glossary-container">
         <table class="table" id="glossary-table">
@@ -24,6 +20,13 @@
                     <th>Palabra en Inglés</th>
                     <th>Palabra en Español</th>
                     <th>Descripción</th>
+                    <th>
+                    <form id="add-word-form">
+                        <label for="wordInput" class="creador">Palabra:</label>
+                        <input type="text" id="wordInput" name="wordInput" required>
+                        <button type="submit">+</button>
+                    </form>
+                </th>
                 </tr>
             </thead>
             <tbody>
@@ -32,7 +35,6 @@
     </div>
     <%- include("fragmentos/footer"); %>
 
-    <!-- Incluir el archivo JavaScript ubicado en /scripts/app.js -->
     <script src="/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

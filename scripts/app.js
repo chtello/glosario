@@ -25,17 +25,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const description = isSpanish ? definitionEs : definitionEn;
 
             const newRow = glossaryTable.insertRow();
-            newRow.classList.add('added-row'); // Añadimos la clase para aplicar el estilo que quita los bordes
             newRow.insertCell(0).textContent = wordEn;
             newRow.insertCell(1).textContent = wordEs;
             newRow.insertCell(2).textContent = description;
 
-            // Limpiamos el input después de agregar la palabra
-            document.getElementById('wordInput').value = '';
         } catch (error) {
             console.error("Error retrieving data:", error);
             alert("No se pudo obtener la definición. Inténtalo nuevamente.");
         }
+
+        document.getElementById('wordInput').value = '';
     });
 
     function capitalizeFirstLetter(word) {
@@ -60,3 +59,4 @@ document.addEventListener('DOMContentLoaded', function() {
         return data[0]?.meanings[0]?.definitions[0]?.definition || "Definición no encontrada";
     }
 });
+    
